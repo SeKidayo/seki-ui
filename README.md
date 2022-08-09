@@ -1,24 +1,22 @@
 # seki-ui
 
-## Project setup
+## 目录结构
+
 ```
-npm install
+├── public/
+└── src/
+    ├── assets/                    // 静态资源目录
+    ├── components/                // 公共组件目录
+    ├── router/                    // 路由配置目录
+    ├── store/                     // 状态管理目录
+    ├── style/                     // 通用 CSS 目录
+    ├── utils/                     // 工具函数目录
+    ├── views/                     // 页面组件目录
+    ├── App.vue
+    ├── main.ts
+    ├── shims-vue.d.ts
+├── tsconfig.json                  // TypeScript 配置文件
+├── vue.config.js                // vue配置文件
+└── package.json
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
