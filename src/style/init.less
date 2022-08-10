@@ -1,3 +1,6 @@
+/* CSS样式初始化 */
+
+// 清除各元素默认内外边距, 消除各浏览器差异
 body,
 ol,
 ul,
@@ -23,18 +26,17 @@ select {
 }
 
 body {
-  // font: 12px "KaiTi", "Arial Narrow", HELVETICA;
-  font-size: 12px;
+  font-size: 16px;
   background: #fff;
-  -webkit-text-size-adjust: 100%;
+  // -webkit-text-size-adjust: 100%;
 }
 a {
   color: #2d374b;
-  text-decoration: none;
+  text-decoration: none; // 去除a标签默认下划线
 }
 a:hover {
   color: #cd0200;
-  text-decoration: underline;
+  text-decoration: underline; // hover时添加下划线
 }
 em {
   font-style: normal;
@@ -47,30 +49,24 @@ img {
   vertical-align: middle;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-collapse: collapse; // table设置为单边框
+  border-spacing: 0; // 单元格边框间的距离
 }
 p {
-  word-wrap: break-word;
+  word-wrap: break-word; // 内容过长则换行
 }
 
-// 清除浮动影响
-.cl:after {
+// 清除浮动影响(给浮动的父元素添加)
+.cl::after {
   content: "";
   display: block;
   overflow: hidden;
-  clear: both;
+  clear: both; // 不允许左右两侧有浮动元素
   height: 0;
   visibility: hidden;
 }
+// 兼容IE6、7
 .cl {
   zoom: 1;
 }
-.Flex {
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-}
+

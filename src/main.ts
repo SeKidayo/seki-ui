@@ -1,5 +1,12 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "@/style/init.less";
+import router from "./router";
+import "@/style/index.less";
 
-createApp(App).mount("#app");
+const app = createApp(App);
+
+// 引入路由
+app.use(router);
+
+// 挂载
+app.mount("#app");

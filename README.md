@@ -3,6 +3,7 @@
 ## 目录结构
 
 ```
+├── public/                        // 文档说明
 ├── public/
 └── src/
     ├── assets/                    // 静态资源目录
@@ -16,7 +17,7 @@
     ├── main.ts
     ├── shims-vue.d.ts
 ├── tsconfig.json                  // TypeScript 配置文件
-├── vue.config.js                // vue配置文件
+├── vue.config.js                  // vue配置文件
 └── package.json
 ```
 

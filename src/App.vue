@@ -1,5 +1,14 @@
 <template>
-  <h1>万事开头难</h1>
+  <router-view></router-view>
 </template>
+
+<script lang="ts">
+export default {
+  name: "App",
+  setup() {
+    console.log(123);
+  },
+};
+</script>
 
 <style></style>
