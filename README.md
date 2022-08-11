@@ -4,7 +4,6 @@
 
 ```
 ├── public/                        // 文档说明
-├── public/
 └── src/
     ├── assets/                    // 静态资源目录
     ├── components/                // 公共组件目录
