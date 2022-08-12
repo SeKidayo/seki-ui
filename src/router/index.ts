@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import Home from "@/views/Home.vue";
+import Content from "@/layout/Content.vue";
 
 const router = createRouter({
   history: createWebHashHistory(), // hash模式
@@ -8,6 +9,12 @@ const router = createRouter({
     {
       path: "/",
       component: Home,
+      children: [
+        {
+          path: "content/:pageId",
+          component: Content,
+        },
+      ],
     },
   ],
 });

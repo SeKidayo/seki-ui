@@ -5,9 +5,6 @@
 <script lang="ts">
 export default {
   name: "App",
-  setup() {
-    console.log(123);
-  },
 };
 </script>
 

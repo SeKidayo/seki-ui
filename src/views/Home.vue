@@ -1,26 +1,34 @@
 <template>
   <div class="home-content">
     <header class="home-header">
-      <div class="home-header-content">
-        <div>logo+名称</div>
-        <div>右侧nav</div>
-      </div>
+      <SekiHeader />
     </header>
     <aside class="home-aside">
-      <div class="home-aside-content">侧边栏</div>
+      <SekiAside />
     </aside>
-    <main class="home-container">
-      <section>1</section>
-      <section>2</section>
-      <section>3</section>
+    <main class="home-main">
+      <router-view></router-view>
     </main>
-    <footer class="home-footer">footer</footer>
+    <footer class="home-footer">
+      <SekiFooter />
+    </footer>
   </div>
 </template>
 
 <script lang="ts">
+import SekiHeader from "@/layout/Header.vue";
+import SekiAside from "@/layout/Aside.vue";
+// import SekiContent from "@/layout/Content.vue";
+import SekiFooter from "@/layout/Footer.vue";
+
 export default {
   name: "Home",
+  components: {
+    SekiHeader,
+    SekiAside,
+    // SekiContent,
+    SekiFooter,
+  },
 };
 </script>
 
@@ -30,16 +38,7 @@ export default {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: aqua;
-    height: var(--header-height);
-
-    .home-header-content {
-      background-color: antiquewhite;
-      display: flex;
-      justify-content: space-between;
-      max-width: var(--header-content-max-width);
-      margin: 0 auto;
-    }
+    background-color: var(--primary-color);
   }
 
   .home-aside {
@@ -50,17 +49,13 @@ export default {
     background-color: rosybrown;
     width: var(--aside-width);
     overflow-y: auto;
-
-    .home-aside-content {
-      height: 2000px;
-    }
   }
 
-  .home-container {
+  .home-main {
     background-color: aquamarine;
     padding-top: var(--header-height);
     padding-left: var(--aside-width);
-    height: 2000px;
+    // height: 2000px;
   }
 
   .home-footer {

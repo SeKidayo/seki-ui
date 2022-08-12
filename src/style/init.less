@@ -26,17 +26,16 @@ select {
 }
 
 body {
-  // font-size: 16px;
-  font-size: var(--font-size-base);
-  background: #fff;
-  // -webkit-text-size-adjust: 100%;
+  font-size: var(--body-font-size);
+  background: var(--body-bg-color);
 }
 a {
-  color: #2d374b;
+  color: var(--a-color);
   text-decoration: none; // 去除a标签默认下划线
 }
 a:hover {
-  color: #cd0200;
+  color: var(--a-hover-color);
+  cursor: pointer;
   text-decoration: underline; // hover时添加下划线
 }
 em {

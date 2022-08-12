@@ -1,4 +1,10 @@
 body {
-  min-width: var(--min-width);
-  min-height: var(--min-height);
+  min-width: var(--body-min-width);
+  min-height: var(--body-min-height);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --aside-width: 0px;
+  }
 }

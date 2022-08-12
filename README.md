@@ -9,7 +9,7 @@
     ├── components/                // 公共组件目录
     ├── router/                    // 路由配置目录
     ├── store/                     // 状态管理目录
-    ├── style/                     // 通用 CSS 目录
+    ├── style/                     // 通用CSS目录
     ├── utils/                     // 工具函数目录
     ├── views/                     // 页面组件目录
     ├── App.vue
