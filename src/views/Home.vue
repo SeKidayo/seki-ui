@@ -1,3 +1,10 @@
+<script lang="ts" setup>
+import SekiHeader from "@/layout/Header.vue";
+import SekiAside from "@/layout/Aside.vue";
+// import SekiContent from "@/layout/Content.vue";
+import SekiFooter from "@/layout/Footer.vue";
+</script>
+
 <template>
   <div class="home-content">
     <header class="home-header">
@@ -14,23 +21,6 @@
     </footer>
   </div>
 </template>
-
-<script lang="ts">
-import SekiHeader from "@/layout/Header.vue";
-import SekiAside from "@/layout/Aside.vue";
-// import SekiContent from "@/layout/Content.vue";
-import SekiFooter from "@/layout/Footer.vue";
-
-export default {
-  name: "Home",
-  components: {
-    SekiHeader,
-    SekiAside,
-    // SekiContent,
-    SekiFooter,
-  },
-};
-</script>
 
 <style lang="less" scoped>
 .home-content {
@@ -55,12 +45,13 @@ export default {
     background-color: aquamarine;
     padding-top: var(--header-height);
     padding-left: var(--aside-width);
-    // height: 2000px;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
   }
 
   .home-footer {
     background-color: beige;
     padding-left: var(--aside-width);
+    height: var(--footer-height);
   }
 }
 </style>
