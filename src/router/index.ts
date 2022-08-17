@@ -1,18 +1,25 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import Home from "@/views/Home.vue";
-import Content from "@/layout/Content.vue";
+import Welcome from "@/views/Welcome.vue";
+
+import menu from "@/menu";
 
 const router = createRouter({
   history: createWebHashHistory(), // hash模式
   routes: [
     {
       path: "/",
-      component: Home,
+      redirect: "/welcome",
       children: [
         {
-          path: "content/:pageId",
-          component: Content,
+          path: "welcome",
+          component: Welcome,
+        },
+        {
+          path: "home",
+          component: Home,
+          children: menu, // 侧边栏导航信息
         },
       ],
     },
