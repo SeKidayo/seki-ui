@@ -14,7 +14,9 @@ import SekiFooter from "@/layout/Footer.vue";
       <SekiAside />
     </aside>
     <main class="home-main">
-      <router-view></router-view>
+      <div class="home-main-content">
+        <router-view></router-view>
+      </div>
     </main>
     <footer class="home-footer">
       <SekiFooter />
@@ -46,6 +48,9 @@ import SekiFooter from "@/layout/Footer.vue";
     padding-top: var(--header-height);
     padding-left: var(--aside-width);
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    .home-main-content {
+      padding: 10px 16px;
+    }
   }
 
   .home-footer {

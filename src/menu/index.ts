@@ -4,10 +4,10 @@
 const menu = [
   {
     path: "menu1",
-    component: () => import("@/views/menu1/Menu01.vue"),
+    component: () => import("@/views/FileRead/FileReadDemo01.vue"),
     meta: {
-      groupTitle: "入门",
-      title: "测试",
+      groupTitle: "文件处理",
+      title: "FileReader案例1",
     },
   },
 ];

@@ -12,7 +12,6 @@ const menuClick = (item: any) => {
 
 <template>
   <div class="home-aside-content">
-    <div>Aside</div>
     <ul>
       <li v-for="item in menu" :key="item.path">
         <span class="home-aside-menu-text" @click="menuClick(item)">{{
@@ -28,6 +27,10 @@ const menuClick = (item: any) => {
   padding: 10px 20px 0;
   .home-aside-menu-text {
     cursor: pointer;
+    &:hover {
+      color: aqua;
+      text-decoration: underline;
+    }
   }
 }
 </style>
