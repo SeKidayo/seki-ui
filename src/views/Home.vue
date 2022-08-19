@@ -30,7 +30,7 @@ import SekiFooter from "@/layout/Footer.vue";
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--header-bg-color);
   }
 
   .home-aside {
@@ -38,13 +38,13 @@ import SekiFooter from "@/layout/Footer.vue";
     left: 0;
     bottom: 0;
     top: var(--header-height);
-    background-color: rosybrown;
+    background-color: var(--aside-bg-color);
     width: var(--aside-width);
     overflow-y: auto;
   }
 
   .home-main {
-    background-color: aquamarine;
+    background-color: var(--main-bg-color);
     padding-top: var(--header-height);
     padding-left: var(--aside-width);
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -54,7 +54,7 @@ import SekiFooter from "@/layout/Footer.vue";
   }
 
   .home-footer {
-    background-color: beige;
+    background-color: var(--footer-bg-color);
     padding-left: var(--aside-width);
     height: var(--footer-height);
   }

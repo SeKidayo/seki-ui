@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>Footer</div>
+  <div>花不尽,月无穷</div>
 </template>
 
 <style></style>
