@@ -7,7 +7,7 @@ const menu = [
     component: () => import("@/views/FileRead/FileReadDemo01.vue"),
     meta: {
       groupTitle: "文件处理",
-      title: "FileReader案例1",
+      title: "FileReader案例",
     },
   },
 ];
