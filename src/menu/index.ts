@@ -10,6 +10,16 @@ const menu = [
       title: "FileReader案例",
     },
   },
+  {
+    path: "visualization",
+    component: () => import("@/views/Visualization/Index.vue"),
+    meta: {
+      groupCode: "visualization",
+      groupTitle: "可视化",
+      title: "可视化初稿",
+      code: "firstDraft",
+    },
+  },
 ];
 
 export default menu;
