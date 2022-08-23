@@ -4,6 +4,10 @@ import menu from "@/menu";
 
 const router = useRouter();
 
+// 提取menu信息
+const menuInfo: MenuInfo[] = menu.map((item) => item.meta);
+console.log(menuInfo);
+
 // 路由跳转
 const menuClick = (item: any) => {
   router.push(`/home/${item.path}`);
