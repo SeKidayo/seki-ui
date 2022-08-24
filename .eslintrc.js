@@ -18,5 +18,6 @@ module.exports = {
     "vue/multi-word-component-names": 0,
     "@typescript-eslint/no-explicit-any": ["off"],
     "no-undef": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
   },
 };
