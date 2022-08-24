@@ -40,7 +40,7 @@ const showPreview = (e: Event) => {
     <input type="file" @change="showPreview" />
   </div>
   <div>
-    <img :src="uploadImgRef" width="200" />
+    <img :src="uploadImgRef" width="800" />
   </div>
 </template>
 
